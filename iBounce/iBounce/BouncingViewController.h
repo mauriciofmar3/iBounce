@@ -10,7 +10,7 @@
 #import "Ball.h"
 #import "BouncingView.h"
 
-@interface BouncingViewController : UIViewController
+@interface BouncingViewController : UIViewController<UIAccelerometerDelegate>
 
 @property (nonatomic) Ball* ball;
 @property (nonatomic) CADisplayLink* displayLink;

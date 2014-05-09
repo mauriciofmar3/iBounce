@@ -37,7 +37,6 @@
     CGRect circle = CGRectMake(point.x - radius, point.y - radius, radius*2, radius*2);
     CGContextFillEllipseInRect(context, circle);
     CGContextStrokePath(context);
-
 }
 
 @end

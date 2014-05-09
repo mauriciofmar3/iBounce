@@ -13,10 +13,13 @@
 @property (nonatomic) int x;
 @property (nonatomic) int y;
 @property (nonatomic) int radius;
-@property (nonatomic) int speed;
+@property (nonatomic) int xspeed;
+@property (nonatomic) int yspeed;
+
 @property (nonatomic) float angle;
 
 -(id)initWithRadius:(int)r andX:(int)x andY:(int)y;
 -(void)update;
+-(void)shake;
 
 @end

@@ -56,6 +56,22 @@
     
 }
 
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if ( event.subtype == UIEventSubtypeMotionShake )
+    {
+        // Put in code here to handle shake
+        NSLog(@"SHAKEN2");
+        [self.ball shake];
+    }
+    
+    if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
+        [super motionEnded:motion withEvent:event];
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
 /*
 #pragma mark - Navigation
 
