@@ -21,6 +21,7 @@
 		7237998A19195E45006E8A84 /* IBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237998919195E45006E8A84 /* IBounce.m */; };
 		7275F197191AA29700237FC0 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F196191AA29700237FC0 /* Ball.m */; };
 		7275F19A191AA6A100237FC0 /* BouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F199191AA6A100237FC0 /* BouncingView.m */; };
+		7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F19F191C9F2500237FC0 /* BouncingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7275F196191AA29700237FC0 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		7275F198191AA6A100237FC0 /* BouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingView.h; sourceTree = "<group>"; };
 		7275F199191AA6A100237FC0 /* BouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingView.m; sourceTree = "<group>"; };
+		7275F19E191C9F2500237FC0 /* BouncingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingViewController.h; sourceTree = "<group>"; };
+		7275F19F191C9F2500237FC0 /* BouncingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				7275F196191AA29700237FC0 /* Ball.m */,
 				7275F198191AA6A100237FC0 /* BouncingView.h */,
 				7275F199191AA6A100237FC0 /* BouncingView.m */,
+				7275F19E191C9F2500237FC0 /* BouncingViewController.h */,
+				7275F19F191C9F2500237FC0 /* BouncingViewController.m */,
 			);
 			path = iBounce;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				7275F197191AA29700237FC0 /* Ball.m in Sources */,
 				7237998A19195E45006E8A84 /* IBounce.m in Sources */,
 				7237996619183C50006E8A84 /* main.m in Sources */,
+				7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */,
 				7275F19A191AA6A100237FC0 /* BouncingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

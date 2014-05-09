@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Ball.h"
 
 @interface BouncingView : UIView
+
+@property (nonatomic) Ball* ball;
 
 @end

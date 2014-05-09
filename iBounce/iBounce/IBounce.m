@@ -7,15 +7,27 @@
 //
 
 #import "IBounce.h"
+#import "BouncingView.h"
 
 @implementation IBounce
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CGRect  viewRect = CGRectMake(0, 0, 200, 400);
+    BouncingView* myView = [[BouncingView alloc] initWithFrame:viewRect];
+    myView.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
+    Ball* ball = [[Ball alloc] initWithRadius:20 andX:100 andY:300];
+    myView.ball = ball;
+    
+    BouncingViewController* myController = [[BouncingViewController alloc] init];
+    myController.view = myView;
+    myController.ball = ball;
+    self.window.rootViewController = myController;
     
     
     return YES;

@@ -19,13 +19,25 @@
     return self;
 }
 
-/*
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+ 
+    CGRect bounds = [self bounds];
+    [[UIColor whiteColor]set];
+    UIRectFill(bounds);
+    
+    CGPoint point = CGPointMake(self.ball.x, self.ball.y);
+    int radius = self.ball.radius;
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
+    CGRect circle = CGRectMake(point.x - radius, point.y - radius, radius*2, radius*2);
+    CGContextFillEllipseInRect(context, circle);
+    CGContextStrokePath(context);
+
 }
-*/
 
 @end

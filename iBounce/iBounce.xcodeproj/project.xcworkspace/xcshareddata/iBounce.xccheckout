@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>04B40FA8-4A52-47E6-9BF9-30DCEB3CF872</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iBounce</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>69C2C898-3473-47E0-A810-8724EBA5EB1A</key>
+		<string>https://github.com/mauriciofmar3/iBounce.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iBounce/iBounce.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>69C2C898-3473-47E0-A810-8724EBA5EB1A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mauriciofmar3/iBounce.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>69C2C898-3473-47E0-A810-8724EBA5EB1A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69C2C898-3473-47E0-A810-8724EBA5EB1A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iBounce</string>
+		</dict>
+	</array>
+</dict>
+</plist>
