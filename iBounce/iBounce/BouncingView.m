@@ -24,13 +24,14 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
- 
+    Ball *ball = (Ball *)self.movingObject;
+    
     CGRect bounds = [self bounds];
     [[UIColor whiteColor]set];
     UIRectFill(bounds);
     
-    CGPoint point = CGPointMake(self.ball.x, self.ball.y);
-    int radius = self.ball.radius;
+    CGPoint point = CGPointMake(ball.x, ball.y);
+    int radius = ball.radius;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);

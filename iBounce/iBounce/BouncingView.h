@@ -11,6 +11,6 @@
 
 @interface BouncingView : UIView
 
-@property (nonatomic) Ball* ball;
+@property (nonatomic) MovingObject* movingObject;
 
 @end

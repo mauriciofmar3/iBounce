@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MovingObject.h"
 
-@interface Ball : NSObject
+@interface Ball : MovingObject
 
 @property (nonatomic) int x;
 @property (nonatomic) int y;
