@@ -24,6 +24,7 @@
 		7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F19F191C9F2500237FC0 /* BouncingViewController.m */; };
 		72B9B404191D9E580091474B /* MovingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B403191D9E580091474B /* MovingObject.m */; };
 		72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B409191DA8A30091474B /* MovingObjectContainer.m */; };
+		72B9B40D191DA9E70091474B /* MovingObjectDrawingVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		72B9B403191D9E580091474B /* MovingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObject.m; sourceTree = "<group>"; };
 		72B9B408191DA8A30091474B /* MovingObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectContainer.h; sourceTree = "<group>"; };
 		72B9B409191DA8A30091474B /* MovingObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectContainer.m; sourceTree = "<group>"; };
+		72B9B40B191DA9E70091474B /* MovingObjectDrawingVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectDrawingVisitor.h; sourceTree = "<group>"; };
+		72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectDrawingVisitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				72B9B403191D9E580091474B /* MovingObject.m */,
 				72B9B408191DA8A30091474B /* MovingObjectContainer.h */,
 				72B9B409191DA8A30091474B /* MovingObjectContainer.m */,
+				72B9B40B191DA9E70091474B /* MovingObjectDrawingVisitor.h */,
+				72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */,
 			);
 			path = iBounce;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				72B9B404191D9E580091474B /* MovingObject.m in Sources */,
 				7275F197191AA29700237FC0 /* Ball.m in Sources */,
+				72B9B40D191DA9E70091474B /* MovingObjectDrawingVisitor.m in Sources */,
 				7237998A19195E45006E8A84 /* IBounce.m in Sources */,
 				7237996619183C50006E8A84 /* main.m in Sources */,
 				72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */,
