@@ -23,7 +23,7 @@
 		7275F19A191AA6A100237FC0 /* BouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F199191AA6A100237FC0 /* BouncingView.m */; };
 		7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F19F191C9F2500237FC0 /* BouncingViewController.m */; };
 		72B9B404191D9E580091474B /* MovingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B403191D9E580091474B /* MovingObject.m */; };
-		72B9B407191DA3970091474B /* movingObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B406191DA3970091474B /* movingObjectContainer.m */; };
+		72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B409191DA8A30091474B /* MovingObjectContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,8 @@
 		7275F19F191C9F2500237FC0 /* BouncingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingViewController.m; sourceTree = "<group>"; };
 		72B9B402191D9E580091474B /* MovingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObject.h; sourceTree = "<group>"; };
 		72B9B403191D9E580091474B /* MovingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObject.m; sourceTree = "<group>"; };
-		72B9B405191DA3970091474B /* movingObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movingObjectContainer.h; sourceTree = "<group>"; };
-		72B9B406191DA3970091474B /* movingObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movingObjectContainer.m; sourceTree = "<group>"; };
+		72B9B408191DA8A30091474B /* MovingObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectContainer.h; sourceTree = "<group>"; };
+		72B9B409191DA8A30091474B /* MovingObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				7275F19F191C9F2500237FC0 /* BouncingViewController.m */,
 				72B9B402191D9E580091474B /* MovingObject.h */,
 				72B9B403191D9E580091474B /* MovingObject.m */,
-				72B9B405191DA3970091474B /* movingObjectContainer.h */,
-				72B9B406191DA3970091474B /* movingObjectContainer.m */,
+				72B9B408191DA8A30091474B /* MovingObjectContainer.h */,
+				72B9B409191DA8A30091474B /* MovingObjectContainer.m */,
 			);
 			path = iBounce;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 			files = (
 				72B9B404191D9E580091474B /* MovingObject.m in Sources */,
 				7275F197191AA29700237FC0 /* Ball.m in Sources */,
-				72B9B407191DA3970091474B /* movingObjectContainer.m in Sources */,
 				7237998A19195E45006E8A84 /* IBounce.m in Sources */,
 				7237996619183C50006E8A84 /* main.m in Sources */,
+				72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */,
 				7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */,
 				7275F19A191AA6A100237FC0 /* BouncingView.m in Sources */,
 			);

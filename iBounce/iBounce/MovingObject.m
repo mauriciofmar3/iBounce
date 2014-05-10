@@ -14,4 +14,8 @@
     
 }
 
+-(void)hitSurfaceAtAngle:(int)angle {
+    
+}
+
 @end

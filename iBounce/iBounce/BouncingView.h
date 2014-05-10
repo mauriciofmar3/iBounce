@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Ball.h"
+#import "MovingObjectContainer.h"
 
 @interface BouncingView : UIView
 
-@property (nonatomic) MovingObject* movingObject;
+@property (nonatomic) MovingObjectContainer* movingObjectContainer;
 
 @end

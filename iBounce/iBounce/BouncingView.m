@@ -7,6 +7,7 @@
 //
 
 #import "BouncingView.h"
+#import "Ball.h"
 
 @implementation BouncingView
 
@@ -24,7 +25,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    Ball *ball = (Ball *)self.movingObject;
+    Ball *ball = (Ball *) self.movingObjectContainer.movingObject;
     
     CGRect bounds = [self bounds];
     [[UIColor whiteColor]set];

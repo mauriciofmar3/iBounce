@@ -1,5 +1,5 @@
 //
-//  movingObjectContainer.h
+//  MovingObjectContainer.h
 //  iBounce
 //
 //  Created by Mauricio Bell'Albero on 5/9/14.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MovingObject.h"
 
-@interface movingObjectContainer : NSObject
+@interface MovingObjectContainer : NSObject
 
 @property (nonatomic) MovingObject* movingObject;
 
