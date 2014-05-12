@@ -19,12 +19,11 @@
 		7237997D19183C50006E8A84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7237997B19183C50006E8A84 /* InfoPlist.strings */; };
 		7237997F19183C50006E8A84 /* iBounceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237997E19183C50006E8A84 /* iBounceTests.m */; };
 		7237998A19195E45006E8A84 /* IBounce.m in Sources */ = {isa = PBXBuildFile; fileRef = 7237998919195E45006E8A84 /* IBounce.m */; };
+		726A3493192030C200A59FF7 /* MovingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 726A3492192030C200A59FF7 /* MovingObject.m */; };
 		7275F197191AA29700237FC0 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F196191AA29700237FC0 /* Ball.m */; };
 		7275F19A191AA6A100237FC0 /* BouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F199191AA6A100237FC0 /* BouncingView.m */; };
 		7275F1A0191C9F2500237FC0 /* BouncingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275F19F191C9F2500237FC0 /* BouncingViewController.m */; };
-		72B9B404191D9E580091474B /* MovingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B403191D9E580091474B /* MovingObject.m */; };
 		72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B409191DA8A30091474B /* MovingObjectContainer.m */; };
-		72B9B40D191DA9E70091474B /* MovingObjectDrawingVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,18 +53,16 @@
 		7237997E19183C50006E8A84 /* iBounceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBounceTests.m; sourceTree = "<group>"; };
 		7237998819195E45006E8A84 /* IBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBounce.h; sourceTree = "<group>"; };
 		7237998919195E45006E8A84 /* IBounce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBounce.m; sourceTree = "<group>"; };
+		726A3491192030C200A59FF7 /* MovingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObject.h; sourceTree = "<group>"; };
+		726A3492192030C200A59FF7 /* MovingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObject.m; sourceTree = "<group>"; };
 		7275F195191AA29700237FC0 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		7275F196191AA29700237FC0 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		7275F198191AA6A100237FC0 /* BouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingView.h; sourceTree = "<group>"; };
 		7275F199191AA6A100237FC0 /* BouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingView.m; sourceTree = "<group>"; };
 		7275F19E191C9F2500237FC0 /* BouncingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncingViewController.h; sourceTree = "<group>"; };
 		7275F19F191C9F2500237FC0 /* BouncingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncingViewController.m; sourceTree = "<group>"; };
-		72B9B402191D9E580091474B /* MovingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObject.h; sourceTree = "<group>"; };
-		72B9B403191D9E580091474B /* MovingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObject.m; sourceTree = "<group>"; };
 		72B9B408191DA8A30091474B /* MovingObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectContainer.h; sourceTree = "<group>"; };
 		72B9B409191DA8A30091474B /* MovingObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectContainer.m; sourceTree = "<group>"; };
-		72B9B40B191DA9E70091474B /* MovingObjectDrawingVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObjectDrawingVisitor.h; sourceTree = "<group>"; };
-		72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObjectDrawingVisitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +132,10 @@
 				7275F199191AA6A100237FC0 /* BouncingView.m */,
 				7275F19E191C9F2500237FC0 /* BouncingViewController.h */,
 				7275F19F191C9F2500237FC0 /* BouncingViewController.m */,
-				72B9B402191D9E580091474B /* MovingObject.h */,
-				72B9B403191D9E580091474B /* MovingObject.m */,
 				72B9B408191DA8A30091474B /* MovingObjectContainer.h */,
 				72B9B409191DA8A30091474B /* MovingObjectContainer.m */,
-				72B9B40B191DA9E70091474B /* MovingObjectDrawingVisitor.h */,
-				72B9B40C191DA9E70091474B /* MovingObjectDrawingVisitor.m */,
+				726A3491192030C200A59FF7 /* MovingObject.h */,
+				726A3492192030C200A59FF7 /* MovingObject.m */,
 			);
 			path = iBounce;
 			sourceTree = "<group>";
@@ -270,9 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B9B404191D9E580091474B /* MovingObject.m in Sources */,
+				726A3493192030C200A59FF7 /* MovingObject.m in Sources */,
 				7275F197191AA29700237FC0 /* Ball.m in Sources */,
-				72B9B40D191DA9E70091474B /* MovingObjectDrawingVisitor.m in Sources */,
 				7237998A19195E45006E8A84 /* IBounce.m in Sources */,
 				7237996619183C50006E8A84 /* main.m in Sources */,
 				72B9B40A191DA8A30091474B /* MovingObjectContainer.m in Sources */,

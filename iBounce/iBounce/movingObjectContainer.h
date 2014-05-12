@@ -12,5 +12,12 @@
 @interface MovingObjectContainer : NSObject
 
 @property (nonatomic) MovingObject* movingObject;
+@property (nonatomic) CGRect bounds;
+@property (nonatomic) int forceRatio;
+
+-(void)shake;
+-(void)update;
+
+-(id)initWithBoundsX:(int)x andY:(int)y;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "IBounce.h"
 #import "BouncingView.h"
+#import "Ball.h"
+#import "MovingObject.h"
 
 @implementation IBounce
 
@@ -15,19 +17,23 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    CGRect  viewRect = CGRectMake(0, 0, 200, 400);
+    CGRect viewRect = CGRectMake(0, 0, 200, 400);
     BouncingView* myView = [[BouncingView alloc] initWithFrame:viewRect];
     myView.backgroundColor = [UIColor whiteColor];
     
     [self.window makeKeyAndVisible];
     
     Ball* ball = [[Ball alloc] initWithRadius:20 andX:100 andY:300];
-    myView.ball = ball;
+    
+    MovingObjectContainer *container = [[MovingObjectContainer alloc] initWithBoundsX:200 andY:400];
     
     BouncingViewController* myController = [[BouncingViewController alloc] init];
     myController.view = myView;
     myController.ball = ball;
+    myController.movingObjectContainer = container;
     self.window.rootViewController = myController;
+    myView.movingObjectContainer = container;
+    container.movingObject = (MovingObject *)ball;
     
     
     return YES;

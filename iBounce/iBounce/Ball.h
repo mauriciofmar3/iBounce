@@ -11,11 +11,12 @@
 
 @interface Ball : MovingObject
 
-@property (nonatomic) int x;
-@property (nonatomic) int y;
-@property (nonatomic) int radius;
-@property (nonatomic) int xspeed;
-@property (nonatomic) int yspeed;
+@property (nonatomic) float x;
+@property (nonatomic) float y;
+@property (nonatomic) float radius;
+@property (nonatomic) float xspeed;
+@property (nonatomic) float yspeed;
+@property (nonatomic) float maximum_speed;
 
 @property (nonatomic) float angle;
 

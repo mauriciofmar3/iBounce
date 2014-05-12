@@ -51,7 +51,7 @@
 {
     //Updates the balls position
     
-    [self.ball update];
+    [self.movingObjectContainer update];
     [self.view setNeedsDisplay];
     
 }
@@ -62,7 +62,7 @@
     {
         // Put in code here to handle shake
         NSLog(@"SHAKEN2");
-        [self.ball shake];
+        [self.movingObjectContainer shake];
     }
     
     if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )

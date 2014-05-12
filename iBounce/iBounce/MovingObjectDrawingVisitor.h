@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Ball.h"
 
 @interface MovingObjectDrawingVisitor : NSObject
+
+-(void)visitMovingObject:(Ball*) ball;
+-(void)visitMovingObject:(MovingObject*) obj;
 
 @end

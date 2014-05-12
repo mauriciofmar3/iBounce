@@ -2,7 +2,7 @@
 //  MovingObject.m
 //  iBounce
 //
-//  Created by Mauricio Bell'Albero on 5/9/14.
+//  Created by Mauricio Bell'Albero on 5/11/14.
 //  Copyright (c) 2014 com.maumau. All rights reserved.
 //
 
@@ -10,12 +10,26 @@
 
 @implementation MovingObject
 
--(void)update {
+-(void)hitTopWithForce:(int)force{
     
 }
-
--(void)hitSurfaceAtAngle:(int)angle {
+-(void)hitBottomWithForce:(int)force{
     
+}
+-(void)hitLeftWithForce:(int)force{
+    
+}
+-(void)hitRightWithForce:(int)force{
+    
+}
+-(void)shake{
+    
+}
+-(void)update{
+    
+}
+-(CGRect)bounds{
+    return CGRectMake(0, 0, 0, 0);
 }
 
 @end

@@ -10,34 +10,56 @@
 
 @implementation Ball
 
+float maximum_speed = 30;
 
 -(id)initWithRadius:(int)r andX:(int)x andY:(int)y{
     if([super self]) {
         self.radius = r;
         self.x = x;
         self.y = y;
-        self.xspeed = 3;
-        self.yspeed = 2;
+        self.xspeed = 2.0;
+        self.yspeed = 2.0;
     }
     return self;
 }
 
 -(void)update {
-    if(self.x > 200 || self.x < 50)
-        self.xspeed *= -1;
+    self.yspeed *= 0.995;
+    self.xspeed *= 0.995;
+    self.xspeed = MIN(self.xspeed, maximum_speed);
+    self.yspeed = MIN(self.yspeed, maximum_speed);
     self.x += self.xspeed;
-    if(self.y > 400 || self.y < 100)
-        self.yspeed *= -1;
     self.y += self.yspeed;
 }
 
--(void)hitSurfaceAtAngle:(int)angle {
-    
+-(void)hitTopWithForce:(int)force {
+    self.yspeed *= force;
+    self.yspeed = fabsf(self.yspeed);
+}
+
+-(void)hitBottomWithForce:(int)force {
+    self.yspeed *= force;
+    self.yspeed = -1 * fabsf(self.yspeed);
+}
+
+-(void)hitRightWithForce:(int)force {
+    self.xspeed *= force;
+    self.xspeed = -1 * fabsf(self.xspeed);
+}
+
+-(void)hitLeftWithForce:(int)force {
+    self.xspeed *= force;
+    self.xspeed = fabsf(self.xspeed);
 }
 
 -(void)shake {
     if(self.x > 150)
         self.xspeed += 1;
+}
+
+-(CGRect)bounds {
+    return CGRectMake(self.x - self.radius, self.y - self.radius,
+                      self.radius * 2, self.radius * 2);
 }
 
 @end

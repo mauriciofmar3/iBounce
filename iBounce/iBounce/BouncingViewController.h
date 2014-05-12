@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "Ball.h"
 #import "BouncingView.h"
+#import "MovingObject.h"
+#import "MovingObjectContainer.h"
 
 @interface BouncingViewController : UIViewController<UIAccelerometerDelegate>
 
 @property (nonatomic) Ball* ball;
+@property (nonatomic) MovingObject* movingObject;
+@property (nonatomic) MovingObjectContainer* movingObjectContainer;
 @property (nonatomic) CADisplayLink* displayLink;
 @property (nonatomic) BouncingView* view;
 
