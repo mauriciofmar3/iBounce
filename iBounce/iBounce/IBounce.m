@@ -16,25 +16,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    CGRect viewRect = CGRectMake(0, 0, 200, 400);
-    BouncingView* myView = [[BouncingView alloc] initWithFrame:viewRect];
-    myView.backgroundColor = [UIColor whiteColor];
+    BouncingViewController* myController = [[BouncingViewController alloc] init];
+    self.window.rootViewController = myController;
     
     [self.window makeKeyAndVisible];
-    
-    Ball* ball = [[Ball alloc] initWithRadius:20 andX:100 andY:300];
-    
-    MovingObjectContainer *container = [[MovingObjectContainer alloc] initWithBoundsX:200 andY:400];
-    
-    BouncingViewController* myController = [[BouncingViewController alloc] init];
-    myController.view = myView;
-    myController.ball = ball;
-    myController.movingObjectContainer = container;
-    self.window.rootViewController = myController;
-    myView.movingObjectContainer = container;
-    container.movingObject = (MovingObject *)ball;
-    
     
     return YES;
 }
