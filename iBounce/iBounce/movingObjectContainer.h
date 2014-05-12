@@ -13,8 +13,8 @@
 
 @property (nonatomic) MovingObject* movingObject;
 @property (nonatomic) CGRect bounds;
-@property (nonatomic) int forceRatio;
 @property (nonatomic) float shakeForceRatio;
+@property (nonatomic) int shakeEdgeThreshold;
 
 -(void)shake;
 -(void)update;

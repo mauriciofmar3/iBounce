@@ -12,6 +12,7 @@
 @implementation MovingObjectContainer
 
 float shakeForceRatio = 2.0;
+int shakeEdgeThreshold = 50;
 
 - (id)initWithBoundsX:(int)x andY:(int)y {
     self = [super init];
@@ -26,38 +27,37 @@ float shakeForceRatio = 2.0;
 -(void)update {
     CGRect objectBounds = [self.movingObject bounds];
     if (objectBounds.origin.x <= self.bounds.origin.x)
-        [self.movingObject hitLeftWithForce:self.forceRatio];
+        [self.movingObject hitLeftWithForce:1];
     
     if (objectBounds.origin.y <= self.bounds.origin.y)
-        [self.movingObject hitTopWithForce:self.forceRatio];
+        [self.movingObject hitTopWithForce:1];
     
     if ((objectBounds.origin.x + objectBounds.size.width) >=
        (self.bounds.origin.x + self.bounds.size.width))
-        [self.movingObject hitRightWithForce:self.forceRatio];
+        [self.movingObject hitRightWithForce:1];
     
     if ((objectBounds.origin.y + objectBounds.size.height) >=
        (self.bounds.origin.y + self.bounds.size.height))
-        [self.movingObject hitBottomWithForce:self.forceRatio];
+        [self.movingObject hitBottomWithForce:1];
     
     [self.movingObject update];
 }
 
 -(void)shake {
-    int threshold = 50;
         
     CGRect objectBounds = [self.movingObject bounds];
-    if (objectBounds.origin.x <= self.bounds.origin.x + threshold)
+    if (objectBounds.origin.x <= self.bounds.origin.x + self.shakeForceRatio)
         [self.movingObject hitLeftWithForce:self.shakeForceRatio];
     
-    if (objectBounds.origin.y <= self.bounds.origin.y + threshold)
+    if (objectBounds.origin.y <= self.bounds.origin.y + self.shakeForceRatio)
         [self.movingObject hitTopWithForce:self.shakeForceRatio];
     
     if ((objectBounds.origin.x + objectBounds.size.width) >=
-        (self.bounds.origin.x + self.bounds.size.width - threshold))
+        (self.bounds.origin.x + self.bounds.size.width - self.shakeForceRatio))
         [self.movingObject hitRightWithForce:self.shakeForceRatio];
     
     if ((objectBounds.origin.y + objectBounds.size.height) >=
-        (self.bounds.origin.y + self.bounds.size.height - threshold))
+        (self.bounds.origin.y + self.bounds.size.height - self.shakeForceRatio))
         [self.movingObject hitBottomWithForce:self.shakeForceRatio];
 }
 
