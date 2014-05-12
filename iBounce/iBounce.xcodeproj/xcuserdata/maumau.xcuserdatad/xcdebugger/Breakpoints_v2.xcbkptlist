@@ -41,22 +41,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iBounce/BouncingViewController.m"
-            timestampString = "421566812.296148"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "iBounce/BouncingView.m"
             timestampString = "421371667.118592"
             startingColumnNumber = "9223372036854775807"
@@ -135,7 +119,7 @@
                   symbolName = "-[BouncingViewController movingObject]"
                   moduleName = "iBounce"
                   urlString = "file:///Users/maumau/iBounce/iBounce/iBounce/BouncingViewController.h"
-                  timestampString = "421566812.590266"
+                  timestampString = "421567053.722683"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
@@ -149,7 +133,7 @@
                   symbolName = "-[BouncingViewController setMovingObject:]"
                   moduleName = "iBounce"
                   urlString = "file:///Users/maumau/iBounce/iBounce/iBounce/BouncingViewController.h"
-                  timestampString = "421566812.590505"
+                  timestampString = "421567053.723049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"

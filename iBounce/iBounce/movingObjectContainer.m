@@ -11,7 +11,6 @@
 
 @implementation MovingObjectContainer
 
-float shakeForceRatio = 2.0;
 int shakeEdgeThreshold = 50;
 
 - (id)initWithBoundsX:(int)x andY:(int)y {
@@ -20,6 +19,8 @@ int shakeEdgeThreshold = 50;
         self.movingObject = [[Ball alloc] initWithRadius:20
                         andX:self.bounds.size.width/2 andY:self.bounds.size.width/2];
         self.bounds = CGRectMake(0, 0, x, y);
+        
+        self.shakeForceRatio = 2.0;
     }
     return self;
 }
