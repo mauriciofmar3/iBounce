@@ -11,6 +11,7 @@
 @implementation Ball
 
 float maximum_speed = 30;
+float speed_decay = 0.998;
 
 -(id)initWithRadius:(int)r andX:(int)x andY:(int)y{
     if([super self]) {
@@ -23,11 +24,8 @@ float maximum_speed = 30;
     return self;
 }
 
--(void)update {
-    self.yspeed *= 0.998;
-    self.xspeed *= 0.998;
-    self.xspeed = MIN(self.xspeed, maximum_speed);
-    self.yspeed = MIN(self.yspeed, maximum_speed);
+-(void)update {    self.xspeed = MIN(self.xspeed * speed_decay, maximum_speed);
+    self.yspeed = MIN(self.yspeed * speed_decay, maximum_speed);
     self.x += self.xspeed;
     self.y += self.yspeed;
 }
