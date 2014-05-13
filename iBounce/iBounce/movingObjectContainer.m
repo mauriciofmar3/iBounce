@@ -11,8 +11,6 @@
 
 @implementation MovingObjectContainer
 
-int shakeEdgeThreshold = 50;
-
 - (id)initWithBoundsX:(int)x andY:(int)y {
     self = [super init];
     if(self) {
@@ -21,6 +19,7 @@ int shakeEdgeThreshold = 50;
         self.bounds = CGRectMake(0, 0, x, y);
         
         self.shakeForceRatio = 2.0;
+        self.shakeEdgeThreshold = 50;
     }
     return self;
 }
@@ -47,18 +46,18 @@ int shakeEdgeThreshold = 50;
 -(void)shake {
         
     CGRect objectBounds = [self.movingObject bounds];
-    if (objectBounds.origin.x <= self.bounds.origin.x + self.shakeForceRatio)
+    if (objectBounds.origin.x <= self.bounds.origin.x + self.shakeEdgeThreshold)
         [self.movingObject hitLeftWithForce:self.shakeForceRatio];
     
-    if (objectBounds.origin.y <= self.bounds.origin.y + self.shakeForceRatio)
+    if (objectBounds.origin.y <= self.bounds.origin.y + self.shakeEdgeThreshold)
         [self.movingObject hitTopWithForce:self.shakeForceRatio];
     
     if ((objectBounds.origin.x + objectBounds.size.width) >=
-        (self.bounds.origin.x + self.bounds.size.width - self.shakeForceRatio))
+        (self.bounds.origin.x + self.bounds.size.width - self.shakeEdgeThreshold))
         [self.movingObject hitRightWithForce:self.shakeForceRatio];
     
     if ((objectBounds.origin.y + objectBounds.size.height) >=
-        (self.bounds.origin.y + self.bounds.size.height - self.shakeForceRatio))
+        (self.bounds.origin.y + self.bounds.size.height - self.shakeEdgeThreshold))
         [self.movingObject hitBottomWithForce:self.shakeForceRatio];
 }
 
