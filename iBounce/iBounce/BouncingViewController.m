@@ -28,17 +28,14 @@
     if(self) {
         
         CGRect viewRect = CGRectMake(0, 0, 200, 400);
-        BouncingView* myView = [[BouncingView alloc] initWithFrame:viewRect];
-        myView.backgroundColor = [UIColor whiteColor];
-        
-        Ball* ball = [[Ball alloc] initWithRadius:20 andX:100 andY:300];
-        
+        self.view = [[BouncingView alloc] initWithFrame:viewRect];
+        self.view.backgroundColor = [UIColor whiteColor];
+
         MovingObjectContainer *container = [[MovingObjectContainer alloc] initWithBoundsX:200 andY:400];
         
-        self.view = myView;
         self.movingObjectContainer = container;
-        myView.movingObjectContainer = container;
-        container.movingObject = (MovingObject *)ball;
+        self.view.movingObjectContainer = container;
+        container.movingObject = (MovingObject *)[[Ball alloc] initWithRadius:20 andX:100 andY:300];
         
         // Do any additional setup after loading the view.
         self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(gameLoop)];
