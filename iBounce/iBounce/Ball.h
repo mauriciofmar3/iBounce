@@ -18,8 +18,6 @@
 @property (nonatomic) float yspeed;
 @property (nonatomic) float maximum_speed;
 
-@property (nonatomic) float angle;
-
 -(id)initWithRadius:(int)r andX:(int)x andY:(int)y;
 -(void)update;
 -(void)shake;

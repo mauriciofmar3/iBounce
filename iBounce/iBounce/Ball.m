@@ -24,8 +24,8 @@ float maximum_speed = 30;
 }
 
 -(void)update {
-    self.yspeed *= 0.995;
-    self.xspeed *= 0.995;
+    self.yspeed *= 0.998;
+    self.xspeed *= 0.998;
     self.xspeed = MIN(self.xspeed, maximum_speed);
     self.yspeed = MIN(self.yspeed, maximum_speed);
     self.x += self.xspeed;

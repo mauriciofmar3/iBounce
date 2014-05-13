@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iBounce/BouncingViewController.h"
-            timestampString = "421546102.209437"
+            timestampString = "421569483.937778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "movingObject"
             landmarkType = "19">
             <Locations>
@@ -119,11 +119,11 @@
                   symbolName = "-[BouncingViewController movingObject]"
                   moduleName = "iBounce"
                   urlString = "file:///Users/maumau/iBounce/iBounce/iBounce/BouncingViewController.h"
-                  timestampString = "421567053.722683"
+                  timestampString = "421569516.468398"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
@@ -133,11 +133,11 @@
                   symbolName = "-[BouncingViewController setMovingObject:]"
                   moduleName = "iBounce"
                   urlString = "file:///Users/maumau/iBounce/iBounce/iBounce/BouncingViewController.h"
-                  timestampString = "421567053.723049"
+                  timestampString = "421569516.468868"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
                   offsetFromSymbolStart = "31">
                </Location>
             </Locations>

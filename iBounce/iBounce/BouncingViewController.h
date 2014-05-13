@@ -14,7 +14,6 @@
 
 @interface BouncingViewController : UIViewController<UIAccelerometerDelegate>
 
-@property (nonatomic) Ball* ball;
 @property (nonatomic) MovingObject* movingObject;
 @property (nonatomic) MovingObjectContainer* movingObjectContainer;
 @property (nonatomic) CADisplayLink* displayLink;

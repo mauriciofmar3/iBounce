@@ -36,7 +36,6 @@
         MovingObjectContainer *container = [[MovingObjectContainer alloc] initWithBoundsX:200 andY:400];
         
         self.view = myView;
-        self.ball = ball;
         self.movingObjectContainer = container;
         myView.movingObjectContainer = container;
         container.movingObject = (MovingObject *)ball;
@@ -65,7 +64,6 @@
     if ( event.subtype == UIEventSubtypeMotionShake )
     {
         // Put in code here to handle shake
-        NSLog(@"SHAKEN2");
         [self.movingObjectContainer shake];
     }
     
