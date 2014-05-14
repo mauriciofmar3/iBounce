@@ -25,12 +25,15 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    Ball *ball = (Ball *) self.movingObjectContainer.movingObject;
     
     CGRect bounds = [self bounds];
     [[UIColor whiteColor]set];
     UIRectFill(bounds);
-    
+}
+
+- (void)drawBall
+{
+    Ball *ball = (Ball *) self.movingObjectContainer.movingObject;
     CGPoint point = CGPointMake(ball.x, ball.y);
     int radius = ball.radius;
     
@@ -39,6 +42,11 @@
     CGRect circle = CGRectMake(point.x - radius, point.y + radius, radius*2, radius*2);
     CGContextFillEllipseInRect(context, circle);
     CGContextStrokePath(context);
+}
+
+- (void)drawSquare
+{
+    
 }
 
 @end
