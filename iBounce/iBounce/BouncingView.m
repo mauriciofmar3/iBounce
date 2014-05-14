@@ -51,8 +51,6 @@
 
 - (void)drawSquare
 {
-    
-//    NSLog(@"drawing square");
     Square *ball = (Square *) self.movingObjectContainer.movingObject;
     CGPoint points[4];
     [ball points:points];
@@ -63,7 +61,6 @@
     {
         
         CGPoint point = points[i%4];
-        NSLog(@"%d %f %f", i, point.x, point.y);
         if(i == 0)
         {
             // move to the first point
