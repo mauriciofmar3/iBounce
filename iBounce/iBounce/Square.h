@@ -10,15 +10,4 @@
 
 @interface Square : MovingObject
 
-@property (nonatomic) float x;
-@property (nonatomic) float y;
-@property (nonatomic) float width;
-@property (nonatomic) float xspeed;
-@property (nonatomic) float yspeed;
-@property (nonatomic) float spin_speed;
-@property (nonatomic) float maximum_speed;
-
--(id)initWithWidth:(int)width andX:(int)x andY:(int)y;
--(void)update;
-
 @end
