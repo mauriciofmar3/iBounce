@@ -10,7 +10,6 @@
 
 @interface Square : MovingObject
 
-<<<<<<< HEAD
 @property (nonatomic) float x;
 @property (nonatomic) float y;
 @property (nonatomic) float width;
@@ -22,6 +21,4 @@
 -(id)initWithWidth:(int)width andX:(int)x andY:(int)y;
 -(void)update;
 
-=======
->>>>>>> parent of baf09af... Properties for the square
 @end
