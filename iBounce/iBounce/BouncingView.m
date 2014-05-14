@@ -57,20 +57,14 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    for(int i = 0; i < 5; i++)
-    {
-        
-        CGPoint point = points[i%4];
+    for(int i = 0; i < 4; i++) {
+        CGPoint point = points[i];
         if(i == 0)
-        {
-            // move to the first point
             CGContextMoveToPoint(context, point.x, point.y);
-        }
         else
-        {
             CGContextAddLineToPoint(context, point.x, point.y);
-        }
     }
+    
     CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     CGContextFillPath(context);
 }
