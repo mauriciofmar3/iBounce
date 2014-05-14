@@ -36,21 +36,33 @@
 -(void)hitTopWithForce:(int)force {
     self.yspeed *= force;
     self.yspeed = fabsf(self.yspeed);
+    float speed = sqrtf(self.yspeed*self.yspeed + self.xspeed*self.xspeed);
+    self.yspeed = speed*sinf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
+    self.xspeed = -1 * speed*cosf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
 }
 
 -(void)hitBottomWithForce:(int)force {
     self.yspeed *= force;
     self.yspeed = -1 * fabsf(self.yspeed);
+    float speed = sqrtf(self.yspeed*self.yspeed + self.xspeed*self.xspeed);
+    self.yspeed = -1 * speed*sinf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
+    self.xspeed = speed*cosf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
 }
 
 -(void)hitRightWithForce:(int)force {
     self.xspeed *= force;
     self.xspeed = -1 * fabsf(self.xspeed);
+    float speed = sqrtf(self.yspeed*self.yspeed + self.xspeed*self.xspeed);
+    self.yspeed = -1 * speed*cosf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
+    self.xspeed = -1 * speed*sinf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
 }
 
 -(void)hitLeftWithForce:(int)force {
     self.xspeed *= force;
     self.xspeed = fabsf(self.xspeed);
+    float speed = sqrtf(self.yspeed*self.yspeed + self.xspeed*self.xspeed);
+    self.yspeed = speed*cosf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
+    self.xspeed = speed*sinf((fmod(self.angle+M_PI/4, M_PI/2)+M_PI/4));
 }
 
 -(CGRect)bounds {
