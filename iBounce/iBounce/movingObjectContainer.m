@@ -14,7 +14,7 @@
 - (id)initWithBoundsX:(int)x andY:(int)y {
     self = [super init];
     if(self) {
-        self.bounds = CGRectMake(0, 0, x, y);
+        self.bounds = CGRectMake(0, 45, x+120, y+26);
         
         self.shakeForceRatio = 2.0;
         self.shakeEdgeThreshold = 50;
