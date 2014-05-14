@@ -29,6 +29,8 @@
     CGRect bounds = [self bounds];
     [[UIColor whiteColor]set];
     UIRectFill(bounds);
+    if ([self.movingObjectContainer.movingObject class] == [Ball class])
+        [self drawBall];
 }
 
 - (void)drawBall
