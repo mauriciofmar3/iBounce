@@ -39,7 +39,6 @@
 //        container.movingObject = (MovingObject *)[[Ball alloc] initWithRadius:20 andX:100 andY:300];
         container.movingObject = (MovingObject *)[[Square alloc] initWithWidth:20 andX:150 andY:300];
         
-        // Do any additional setup after loading the view.
         self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(gameLoop)];
         [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
         
@@ -49,18 +48,14 @@
 
 -(void)gameLoop
 {
-    //Updates the balls position
-    
     [self.movingObjectContainer update];
     [self.view setNeedsDisplay];
-    
 }
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if ( event.subtype == UIEventSubtypeMotionShake )
     {
-        // Put in code here to handle shake
         [self.movingObjectContainer shake];
     }
     
