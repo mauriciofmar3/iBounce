@@ -54,12 +54,12 @@
 }
 
 -(CGRect)bounds {
-    return CGRectMake(self.x - self.width, self.y - self.width,
-                      self.width * 2, self.width * 2);
+    float distance = self.width * sinf(fmod(self.angle + M_PI/4, M_PI/2) + M_PI/4);
+    return CGRectMake(self.x - distance, self.y - distance,
+                      distance * 2, distance * 2);
 }
 
 -(CGPoint*)points:(CGPoint*)points {
-    NSLog(@"%f %f %f", self.x, self.y, self.yspeed);
     for(int i = 0; i < 4; ++i) {
         float angle_offset = self.angle + (M_PI/2) * i;
         points[i] = CGPointMake(self.x + self.width * sinf(angle_offset), self.y + self.width * cosf(angle_offset));
