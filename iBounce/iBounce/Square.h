@@ -10,9 +10,10 @@
 
 @interface Square : MovingObject
 
+<<<<<<< HEAD
 @property (nonatomic) float x;
 @property (nonatomic) float y;
-@property (nonatomic) float radius;
+@property (nonatomic) float width;
 @property (nonatomic) float xspeed;
 @property (nonatomic) float yspeed;
 @property (nonatomic) float spin_speed;
@@ -21,4 +22,6 @@
 -(id)initWithWidth:(int)width andX:(int)x andY:(int)y;
 -(void)update;
 
+=======
+>>>>>>> parent of baf09af... Properties for the square
 @end
