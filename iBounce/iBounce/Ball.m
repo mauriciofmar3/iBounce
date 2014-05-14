@@ -50,11 +50,6 @@ float speed_decay = 0.998;
     self.xspeed = fabsf(self.xspeed);
 }
 
--(void)shake {
-    if(self.x > 150)
-        self.xspeed += 1;
-}
-
 -(CGRect)bounds {
     return CGRectMake(self.x - self.radius, self.y - self.radius,
                       self.radius * 2, self.radius * 2);

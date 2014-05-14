@@ -20,6 +20,5 @@
 
 -(id)initWithRadius:(int)r andX:(int)x andY:(int)y;
 -(void)update;
--(void)shake;
 
 @end
