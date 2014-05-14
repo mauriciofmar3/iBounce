@@ -15,6 +15,7 @@
         self.width = width;
         self.x = x;
         self.y = y;
+        self.angle = M_PI / 4;
         self.xspeed = 2.0;
         self.yspeed = 2.0;
         
@@ -29,6 +30,7 @@
     self.yspeed = MIN(self.yspeed * self.speed_decay, self.maximum_speed);
     self.x += self.xspeed;
     self.y += self.yspeed;
+    self.angle += M_PI/64;
 }
 
 -(void)hitTopWithForce:(int)force {
@@ -51,14 +53,19 @@
     self.xspeed = fabsf(self.xspeed);
 }
 
--(void)shake {
-    if(self.x > 150)
-        self.xspeed += 1;
-}
-
 -(CGRect)bounds {
     return CGRectMake(self.x - self.width, self.y - self.width,
                       self.width * 2, self.width * 2);
+}
+
+-(CGPoint*)points:(CGPoint*)points {
+    NSLog(@"%f %f %f", self.x, self.y, self.yspeed);
+    for(int i = 0; i < 4; ++i) {
+        float angle_offset = self.angle + (M_PI/2) * i;
+        points[i] = CGPointMake(self.x + self.width * sinf(angle_offset), self.y + self.width * cosf(angle_offset));
+        
+    }
+    return points;
 }
 
 @end

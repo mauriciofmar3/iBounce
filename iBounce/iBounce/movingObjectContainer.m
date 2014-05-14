@@ -14,8 +14,6 @@
 - (id)initWithBoundsX:(int)x andY:(int)y {
     self = [super init];
     if(self) {
-        self.movingObject = [[Ball alloc] initWithRadius:20
-                        andX:self.bounds.size.width/2 andY:self.bounds.size.width/2];
         self.bounds = CGRectMake(0, 0, x, y);
         
         self.shakeForceRatio = 2.0;

@@ -7,6 +7,7 @@
 //
 
 #import "BouncingViewController.h"
+#import "Square.h"
 
 @interface BouncingViewController ()
 
@@ -35,7 +36,8 @@
         
         self.movingObjectContainer = container;
         self.view.movingObjectContainer = container;
-        container.movingObject = (MovingObject *)[[Ball alloc] initWithRadius:20 andX:100 andY:300];
+//        container.movingObject = (MovingObject *)[[Ball alloc] initWithRadius:20 andX:100 andY:300];
+        container.movingObject = (MovingObject *)[[Square alloc] initWithWidth:20 andX:150 andY:300];
         
         // Do any additional setup after loading the view.
         self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(gameLoop)];

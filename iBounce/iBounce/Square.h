@@ -17,8 +17,10 @@
 @property (nonatomic) float yspeed;
 @property (nonatomic) float maximum_speed;
 @property (nonatomic) float speed_decay;
+@property (nonatomic) float angle;
 
 -(id)initWithWidth:(int)width andX:(int)x andY:(int)y;
 -(void)update;
+-(CGPoint*)points:(CGPoint*)points;
 
 @end

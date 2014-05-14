@@ -8,6 +8,7 @@
 
 #import "BouncingView.h"
 #import "Ball.h"
+#import "Square.h"
 
 @implementation BouncingView
 
@@ -31,6 +32,8 @@
     UIRectFill(bounds);
     if ([self.movingObjectContainer.movingObject class] == [Ball class])
         [self drawBall];
+    if ([self.movingObjectContainer.movingObject class] == [Square class])
+        [self drawSquare];
 }
 
 - (void)drawBall
@@ -49,6 +52,30 @@
 - (void)drawSquare
 {
     
+//    NSLog(@"drawing square");
+    Square *ball = (Square *) self.movingObjectContainer.movingObject;
+    CGPoint points[4];
+    [ball points:points];
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    for(int i = 0; i < 5; i++)
+    {
+        
+        CGPoint point = points[i%4];
+        NSLog(@"%d %f %f", i, point.x, point.y);
+        if(i == 0)
+        {
+            // move to the first point
+            CGContextMoveToPoint(context, point.x, point.y);
+        }
+        else
+        {
+            CGContextAddLineToPoint(context, point.x, point.y);
+        }
+    }
+    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextFillPath(context);
 }
 
 @end
